@@ -1,0 +1,63 @@
+{
+  "name": "arxiv/enum_range/diskann",
+  "dataset": {
+    "base_vectors": "${DATA_ROOT}/arxiv/database_vectors.fvecs",
+    "query_vectors": "${DATA_ROOT}/arxiv/enum_range/query_vectors.fvecs",
+    "groundtruth": "${DATA_ROOT}/arxiv/enum_range/groundtruth.ivecs",
+    "attributes": [
+      {
+        "name": "attribute_0",
+        "type": "enum",
+        "value_type": "int32",
+        "database": "${DATA_ROOT}/arxiv/database/emis.csv",
+        "queries": "${DATA_ROOT}/arxiv/enum_range/attribute_0.query.csv"
+      },
+      {
+        "name": "attribute_1",
+        "type": "range",
+        "value_type": "int32",
+        "database": "${DATA_ROOT}/arxiv/database/r.csv",
+        "queries": "${DATA_ROOT}/arxiv/enum_range/attribute_1.query.csv"
+      }
+    ]
+  },
+  "index": {
+    "backend": "diskann",
+    "path": "../../results/reproduced/disk/arxiv_enum_range.idx",
+    "pretrain_vectors": 100000,
+    "build_options": {
+      "diskann.build.thread_count": 30,
+      "diskann.build.ef_construction": 512,
+      "diskann.build.neighbor_count": 128,
+      "diskann.build.slack_pruning_factor": 1.2,
+      "diskann.build.reorder_layout": false,
+      "encoding.pq.m": 256
+    },
+    "searcher_options": {
+      "diskann.search.num_nodes_to_cache": 0,
+      "diskann.search.sector_aligned_read": false
+    }
+  },
+  "query": {
+    "topk": 10,
+    "width_option": "diskann.search.list_size",
+    "widths": [
+      10,
+      20,
+      40,
+      80,
+      120,
+      200,
+      300,
+      500,
+      800,
+      1200,
+      1600
+    ],
+    "parallel_numbers": [
+      1,
+      4
+    ],
+    "io_limit_multiplier": 1
+  }
+}

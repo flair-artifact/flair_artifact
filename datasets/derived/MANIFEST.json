@@ -1,0 +1,189 @@
+{
+  "arxiv": {
+    "bins_query_vectors": {
+      "dim": 4096,
+      "rows": 1000,
+      "sha256": "8414438decab99911d78de1f50936b671d6767426b88e6c18c36e333899a606e"
+    },
+    "database": {
+      "em.csv": {
+        "rows": 2735264
+      },
+      "emis.csv": {
+        "rows": 2735264
+      },
+      "r.csv": {
+        "rows": 2735264
+      },
+      "r2.csv": {
+        "rows": 2735264
+      }
+    },
+    "dataset": "arxiv",
+    "queries": 1000,
+    "scenarios": {
+      "enum_enum": {
+        "attributes": [
+          {
+            "database": "database/em.csv",
+            "query": "attribute_0.query.csv",
+            "slot": "attribute_0"
+          },
+          {
+            "database": "database/emis.csv",
+            "query": "attribute_1.query.csv",
+            "slot": "attribute_1"
+          }
+        ],
+        "dim": 4096,
+        "gt_width": 100
+      },
+      "enum_range": {
+        "attributes": [
+          {
+            "database": "database/emis.csv",
+            "query": "attribute_0.query.csv",
+            "slot": "attribute_0"
+          },
+          {
+            "database": "database/r.csv",
+            "query": "attribute_1.query.csv",
+            "slot": "attribute_1"
+          }
+        ],
+        "dim": 4096,
+        "gt_width": 100
+      },
+      "range_range": {
+        "attributes": [
+          {
+            "database": "database/r.csv",
+            "query": "attribute_0.query.csv",
+            "slot": "attribute_0"
+          },
+          {
+            "database": "database/r2.csv",
+            "query": "attribute_1.query.csv",
+            "slot": "attribute_1"
+          }
+        ],
+        "dim": 4096,
+        "gt_width": 100
+      }
+    },
+    "topk": 100,
+    "vectors": 2735264
+  },
+  "gist": {
+    "bins_query_vectors": {
+      "dim": 960,
+      "rows": 1000,
+      "sha256": "0d1d620049de12da455ed7201e97cbab372c4d54d0e6dedbc8c503f62c911299"
+    },
+    "database": {
+      "enum1.csv": {
+        "rows": 1000000
+      },
+      "enum2.csv": {
+        "rows": 1000000
+      },
+      "range_float.csv": {
+        "rows": 1000000
+      },
+      "range_int.csv": {
+        "rows": 1000000
+      }
+    },
+    "dataset": "gist",
+    "queries": 1000,
+    "scenarios": {
+      "enum_enum": {
+        "attributes": [
+          {
+            "database": "database/enum1.csv",
+            "query": "attribute_0.query.csv",
+            "slot": "attribute_0"
+          },
+          {
+            "database": "database/enum2.csv",
+            "query": "attribute_1.query.csv",
+            "slot": "attribute_1"
+          }
+        ],
+        "dim": 960,
+        "gt_width": 10
+      },
+      "enum_range": {
+        "attributes": [
+          {
+            "database": "database/enum2.csv",
+            "query": "attribute_0.query.csv",
+            "slot": "attribute_0"
+          },
+          {
+            "database": "database/range_int.csv",
+            "query": "attribute_1.query.csv",
+            "slot": "attribute_1"
+          }
+        ],
+        "dim": 960,
+        "gt_width": 10
+      },
+      "range_range": {
+        "attributes": [
+          {
+            "database": "database/range_int.csv",
+            "query": "attribute_0.query.csv",
+            "slot": "attribute_0"
+          },
+          {
+            "database": "database/range_float.csv",
+            "query": "attribute_1.query.csv",
+            "slot": "attribute_1"
+          }
+        ],
+        "dim": 960,
+        "gt_width": 10
+      }
+    },
+    "topk": 10,
+    "vectors": 1000000
+  },
+  "qdrant": {
+    "bins_query_vectors": {
+      "dim": 384,
+      "rows": 1000,
+      "sha256": "2fdfa86a86e4e052b028d6e2f0284dac62ceb0ee80ebd9e26710ac0918edc617"
+    },
+    "database": {
+      "emis.csv": {
+        "rows": 2138591
+      },
+      "r.csv": {
+        "rows": 2138591
+      }
+    },
+    "dataset": "qdrant",
+    "queries": 1000,
+    "scenarios": {
+      "enum_range": {
+        "attributes": [
+          {
+            "database": "database/emis.csv",
+            "query": "attribute_0.query.csv",
+            "slot": "attribute_0"
+          },
+          {
+            "database": "database/r.csv",
+            "query": "attribute_1.query.csv",
+            "slot": "attribute_1"
+          }
+        ],
+        "dim": 384,
+        "gt_width": 25
+      }
+    },
+    "topk": 25,
+    "vectors": 2138591
+  }
+}

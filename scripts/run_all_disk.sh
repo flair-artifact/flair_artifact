@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+export FLAIR_VARIANT=main
+
+ROOT=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
+: "${DATA_ROOT:?Set DATA_ROOT to the prepared dataset root}"
+mkdir -p "$ROOT/results/reproduced/disk"
+for config in "$ROOT"/configs/disk/*.json; do
+  name=$(basename "$config" .json)
+  "$ROOT/run_artifact.sh" -m flair_artifact.run \
+    --config "$config" \
+    --output "$ROOT/results/reproduced/disk/$name.json"
+done

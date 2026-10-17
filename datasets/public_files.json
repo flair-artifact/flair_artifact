@@ -1,0 +1,87 @@
+{
+  "gist": {
+    "source": "http://corpus-texmex.irisa.fr/",
+    "files": [
+      {
+        "path": "gist_base.fvecs",
+        "bytes": 3844000000,
+        "sha256": "73418110328f5aa522d9f6b0cd9115a6c515dc44e3c48420e506ddeddbdbdbc0"
+      },
+      {
+        "path": "gist_query.fvecs",
+        "bytes": 3844000,
+        "sha256": "0d1d620049de12da455ed7201e97cbab372c4d54d0e6dedbc8c503f62c911299"
+      }
+    ]
+  },
+  "arxiv": {
+    "source": "https://huggingface.co/datasets/SPCL/arxiv-for-fanns-large",
+    "files": [
+      {
+        "path": "database_vectors.fvecs",
+        "bytes": 44825506432,
+        "sha256": "72f82ebd2d454483d9000aeb1d507e13a1914037454a7c09c457a043f4b34bf0"
+      },
+      {
+        "path": "query_vectors.fvecs",
+        "bytes": 163880000,
+        "sha256": "5c782315435e96f9ef77ae30b61a026a61cd7d86dde9335acb1fceee14c42c1f"
+      },
+      {
+        "path": "database_attributes.jsonl",
+        "bytes": 1124482479,
+        "sha256": "1eb8ce3ceb6452500acf903772730d099297c623cd579a064dd596ba05e9e9c9"
+      },
+      {
+        "path": "em_query_attributes.jsonl",
+        "bytes": 130000,
+        "sha256": "efa243225c8070ccc05169f7ea23eec261dea24c720bf7b9c2354bc718cef4a8"
+      },
+      {
+        "path": "emis_query_attributes.jsonl",
+        "bytes": 192400,
+        "sha256": "06584676633ebb945f6327699f4f555432b37936a29460e494b7c5f8d9e1811f"
+      },
+      {
+        "path": "r_query_attributes.jsonl",
+        "bytes": 430000,
+        "sha256": "cce12feee6d18830d04eb42f5949b562f893f66ebbc405efae0a490eebbc8791"
+      },
+      {
+        "path": "ground_truth_em.ivecs",
+        "bytes": 4040000,
+        "sha256": "98fa2e41f5a2797c9173941edd9421fb66f1e217c3051665ab7a32711dd8d3f3"
+      },
+      {
+        "path": "ground_truth_emis.ivecs",
+        "bytes": 4040000,
+        "sha256": "bb30a1b15fdb928ef2b78b62bbbda2c658cc930c659f1b12f677175d762e42bf"
+      },
+      {
+        "path": "ground_truth_r.ivecs",
+        "bytes": 4040000,
+        "sha256": "5c195238fdebbbe3ac1f04a4768eeda7b2261f2a0cbe92918824654534838212"
+      }
+    ]
+  },
+  "qdrant": {
+    "source": "https://github.com/qdrant/ann-filtering-benchmark-datasets",
+    "files": [
+      {
+        "path": "vectors.npy",
+        "bytes": 3284875904,
+        "sha256": "08810e787851b00aebd2a295c57a1f20af517ebb9ab5bb8f22b1d3166d9b2308"
+      },
+      {
+        "path": "payloads.jsonl",
+        "bytes": 3663647674,
+        "sha256": "bb3170ee5fa3d9adf0b5c379880204382bd32380763d7f0ee9db97937126576e"
+      },
+      {
+        "path": "tests.jsonl",
+        "bytes": 92796647,
+        "sha256": "113ffbbac713cdb3b827473e90c757aa2a96aea25933003408985c437b6dd689"
+      }
+    ]
+  }
+}

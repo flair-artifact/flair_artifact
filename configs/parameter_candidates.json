@@ -1,0 +1,27 @@
+{
+  "format_version": 1,
+  "scope": "FLAIR composite in-memory parameter search",
+  "selection_policy": {
+    "method": "coordinate search on a fixed 50-query sample",
+    "target_recall": 0.95,
+    "objective_after_target": "maximum measured QPS",
+    "hardware_note": "The selected winner is environment-dependent and is not an artifact pass/fail target."
+  },
+  "query_search_widths": [10, 20, 40, 80, 120, 200, 300, 500, 800, 1200, 1600],
+  "build_candidates": {
+    "ef_construction": [256, 512],
+    "ef_construction_conditional_fallback": [1024],
+    "neighbor_count": [64, 128],
+    "tag_supplement_ef_construction": [0, 20, 40, 80, 160, 300],
+    "slack_pruning_factor": [1.1],
+    "range_label_ratio_pair_coarse": [[0.02, 0.20], [0.02, 0.50], [0.50, 1.00]],
+    "range_label_ratio_pair_conditional_refinements": {
+      "0.02,0.20": [[0.02, 0.10], [0.05, 0.20]],
+      "0.50,1.00": [[0.70, 1.00], [0.80, 1.00]]
+    }
+  },
+  "constraints": [
+    "ef_construction >= neighbor_count",
+    "range_label_ratio_pair is omitted for enum-enum scenarios"
+  ]
+}

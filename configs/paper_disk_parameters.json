@@ -1,0 +1,97 @@
+{
+  "format_version": 1,
+  "scope": "FLAIR composite disk experiments",
+  "policy": {
+    "reorder_layout": false,
+    "sector_aligned_read": false,
+    "lock_pool_entries": 256,
+    "query_parallel_numbers": [
+      1,
+      4
+    ],
+    "io_multiplier": 1,
+    "paper_cache_policy": "cold",
+    "artifact_cache_policy": "operating-system-managed; not cleared by the functional driver"
+  },
+  "fixed_parameters": {
+    "arxiv": {
+      "pq_bytes": 256,
+      "build_threads": 30,
+      "query_threads": 1,
+      "num_nodes_to_cache": 0,
+      "topk": 10
+    },
+    "gist": {
+      "pq_bytes": 240,
+      "build_threads": 30,
+      "query_threads": 1,
+      "num_nodes_to_cache": 0,
+      "topk": 10
+    },
+    "qdrant": {
+      "pq_bytes": 96,
+      "build_threads": 30,
+      "query_threads": 1,
+      "num_nodes_to_cache": 0,
+      "topk": 10
+    }
+  },
+  "scenarios": {
+    "arxiv": {
+      "enum_enum": {
+        "L": 256,
+        "R": 64,
+        "reorder": false,
+        "sector": false,
+        "slack": 1.1
+      },
+      "enum_range": {
+        "L": 512,
+        "R": 128,
+        "reorder": false,
+        "sector": false,
+        "slack": 1.2
+      },
+      "range_range": {
+        "L": 256,
+        "R": 128,
+        "reorder": false,
+        "sector": false,
+        "slack": 1.1
+      }
+    },
+    "gist": {
+      "enum_enum": {
+        "L": 512,
+        "R": 64,
+        "reorder": false,
+        "sector": false,
+        "slack": 1.0
+      },
+      "enum_range": {
+        "L": 256,
+        "R": 64,
+        "reorder": false,
+        "sector": false,
+        "slack": 1.1
+      },
+      "range_range": {
+        "L": 256,
+        "R": 64,
+        "reorder": false,
+        "sector": false,
+        "slack": 1.1
+      }
+    },
+    "qdrant": {
+      "enum_range": {
+        "L": 512,
+        "R": 128,
+        "reorder": false,
+        "sector": false,
+        "slack": 1.0
+      }
+    }
+  },
+  "note": "Frozen paper choices only. No measured curves or metric-equivalence targets are included. The lock pool is a compiled constant, not a runtime option."
+}

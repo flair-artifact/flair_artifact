@@ -1,0 +1,19 @@
+{
+  "format_version": 1,
+  "constants": {
+    "topk": 10,
+    "build_threads": 30,
+    "query_threads": 1,
+    "distance": "l2",
+    "search_widths": [10, 20, 40, 80, 120, 200, 300, 500, 800, 1200, 1600]
+  },
+  "experiments": {
+    "gist/enum_enum": {"ef_construction": 256, "neighbor_count": 128, "slack_pruning_factor": 1.1, "tag_supplement_ef_construction": 80, "min_range_label_ratio": 0.02, "max_range_label_ratio": 0.5},
+    "gist/range_range": {"ef_construction": 512, "neighbor_count": 128, "slack_pruning_factor": 1.1, "tag_supplement_ef_construction": 0, "min_range_label_ratio": 0.02, "max_range_label_ratio": 0.5},
+    "gist/enum_range": {"ef_construction": 256, "neighbor_count": 128, "slack_pruning_factor": 1.1, "tag_supplement_ef_construction": 160, "min_range_label_ratio": 0.8, "max_range_label_ratio": 1.0},
+    "arxiv/enum_enum": {"ef_construction": 256, "neighbor_count": 64, "slack_pruning_factor": 1.1, "tag_supplement_ef_construction": 20, "min_range_label_ratio": 0.02, "max_range_label_ratio": 0.5},
+    "arxiv/range_range": {"ef_construction": 256, "neighbor_count": 128, "slack_pruning_factor": 1.1, "tag_supplement_ef_construction": 40, "min_range_label_ratio": 0.02, "max_range_label_ratio": 0.5},
+    "arxiv/enum_range": {"ef_construction": 512, "neighbor_count": 128, "slack_pruning_factor": 1.1, "tag_supplement_ef_construction": 0, "min_range_label_ratio": 0.5, "max_range_label_ratio": 1.0},
+    "qdrant/enum_range": {"ef_construction": 256, "neighbor_count": 128, "slack_pruning_factor": 1.1, "tag_supplement_ef_construction": 20, "min_range_label_ratio": 0.8, "max_range_label_ratio": 1.0}
+  }
+}

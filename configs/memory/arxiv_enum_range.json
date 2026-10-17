@@ -1,0 +1,54 @@
+{
+  "name": "arxiv/enum_range",
+  "dataset": {
+    "base_vectors": "${DATA_ROOT}/arxiv/database_vectors.fvecs",
+    "query_vectors": "${DATA_ROOT}/arxiv/enum_range/query_vectors.fvecs",
+    "groundtruth": "${DATA_ROOT}/arxiv/enum_range/groundtruth.ivecs",
+    "attributes": [
+      {
+        "name": "attribute_0",
+        "type": "enum",
+        "value_type": "int32",
+        "database": "${DATA_ROOT}/arxiv/database/emis.csv",
+        "queries": "${DATA_ROOT}/arxiv/enum_range/attribute_0.query.csv"
+      },
+      {
+        "name": "attribute_1",
+        "type": "range",
+        "value_type": "int32",
+        "database": "${DATA_ROOT}/arxiv/database/r.csv",
+        "queries": "${DATA_ROOT}/arxiv/enum_range/attribute_1.query.csv"
+      }
+    ]
+  },
+  "index": {
+    "backend": "flatnsw",
+    "path": "../../results/reproduced/arxiv_enum_range.idx",
+    "build_options": {
+      "flatnsw.build.thread_count": 30,
+      "flatnsw.build.ef_construction": 512,
+      "flatnsw.build.neighbor_count": 128,
+      "flatnsw.build.slack_pruning_factor": 1.1,
+      "flatnsw.build.tag_supplement_ef_construction": 0,
+      "extension.build.tag.min_range_label_ratio": 0.5,
+      "extension.build.tag.max_range_label_ratio": 1.0
+    }
+  },
+  "query": {
+    "topk": 10,
+    "width_option": "flatnsw.search.ef_search",
+    "widths": [
+      10,
+      20,
+      40,
+      80,
+      120,
+      200,
+      300,
+      500,
+      800,
+      1200,
+      1600
+    ]
+  }
+}

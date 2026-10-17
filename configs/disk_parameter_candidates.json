@@ -1,0 +1,102 @@
+{
+  "format_version": 1,
+  "scope": "FLAIR composite disk parameter search",
+  "selection_policy": {
+    "method": "coordinate search on a fixed 50-query sample",
+    "target_recall": 0.95,
+    "relative_improvement_threshold": 0.01,
+    "query_parallel_number": 4,
+    "io_multiplier": 1,
+    "objective_after_target": "maximum measured QPS at recall >= target",
+    "note": "Candidate sets and frozen winners are provided; the public driver runs the frozen settings and does not rerun the original coordinate search."
+  },
+  "build_candidates": {
+    "arxiv": {
+      "L": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "R": [
+        32,
+        64,
+        128
+      ],
+      "slack": [
+        1.0,
+        1.1,
+        1.2
+      ],
+      "layout": [
+        {
+          "reorder": false,
+          "sector": false
+        }
+      ]
+    },
+    "gist": {
+      "L": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "R": [
+        32,
+        64
+      ],
+      "slack": [
+        1.0,
+        1.1,
+        1.2
+      ],
+      "layout": [
+        {
+          "reorder": false,
+          "sector": false
+        }
+      ]
+    },
+    "qdrant": {
+      "L": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "R": [
+        32,
+        64,
+        128
+      ],
+      "slack": [
+        1.0,
+        1.1,
+        1.2
+      ],
+      "layout": [
+        {
+          "reorder": false,
+          "sector": false
+        }
+      ]
+    }
+  },
+  "constraints": [
+    "L >= R"
+  ],
+  "query_search_widths": [
+    10,
+    20,
+    40,
+    80,
+    120,
+    200,
+    300,
+    500,
+    800,
+    1200,
+    1600
+  ]
+}

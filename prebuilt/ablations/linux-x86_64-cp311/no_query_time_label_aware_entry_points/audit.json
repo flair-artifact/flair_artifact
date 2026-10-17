@@ -1,0 +1,48 @@
+{
+  "file": "_native.so",
+  "size_bytes": 3751248,
+  "sha256": "d7a17436d8a51117f6f8e320e31b6460f4dfcc16324c18646be5ecbb0ce10916",
+  "needed": [
+    "libdl.so.2",
+    "libpthread.so.0",
+    "libstdc++.so.6",
+    "libm.so.6",
+    "libgcc_s.so.1",
+    "libc.so.6",
+    "ld-linux-x86-64.so.2"
+  ],
+  "dynamic_export_count": 1,
+  "python_init_exports": [
+    "00000000000dcb50 T PyInit__native"
+  ],
+  "glibc_versions": [
+    "GLIBC_2.14",
+    "GLIBC_2.2.5",
+    "GLIBC_2.29",
+    "GLIBC_2.3",
+    "GLIBC_2.3.4",
+    "GLIBC_2.4"
+  ],
+  "glibcxx_versions": [
+    "GLIBCXX_3.4",
+    "GLIBCXX_3.4.11",
+    "GLIBCXX_3.4.14",
+    "GLIBCXX_3.4.15",
+    "GLIBCXX_3.4.18",
+    "GLIBCXX_3.4.19",
+    "GLIBCXX_3.4.20",
+    "GLIBCXX_3.4.21",
+    "GLIBCXX_3.4.22",
+    "GLIBCXX_3.4.26",
+    "GLIBCXX_3.4.28",
+    "GLIBCXX_3.4.9"
+  ],
+  "identity_leaks": {
+    "home_path": 0,
+    "ssd_path": 0,
+    "email": 0,
+    "internal_host": 0,
+    "internal_user": 0,
+    "internal_cloud": 0
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "format_version": 1,
+  "base_config": "../memory/gist_enum_range.json",
+  "variants": [
+    {
+      "name": "baseline",
+      "build_options": {
+        "flatnsw.build.ef_construction": 256,
+        "flatnsw.build.neighbor_count": 128,
+        "flatnsw.build.tag_supplement_ef_construction": 160,
+        "flatnsw.build.slack_pruning_factor": 1.1,
+        "extension.build.tag.min_range_label_ratio": 0.8,
+        "extension.build.tag.max_range_label_ratio": 1.0
+      }
+    },
+    {
+      "name": "ef_construction_1024",
+      "build_options": {
+        "flatnsw.build.ef_construction": 1024,
+        "flatnsw.build.neighbor_count": 128,
+        "flatnsw.build.tag_supplement_ef_construction": 160,
+        "flatnsw.build.slack_pruning_factor": 1.1,
+        "extension.build.tag.min_range_label_ratio": 0.8,
+        "extension.build.tag.max_range_label_ratio": 1.0
+      }
+    },
+    {
+      "name": "ef_construction_128",
+      "build_options": {
+        "flatnsw.build.ef_construction": 128,
+        "flatnsw.build.neighbor_count": 128,
+        "flatnsw.build.tag_supplement_ef_construction": 160,
+        "flatnsw.build.slack_pruning_factor": 1.1,
+        "extension.build.tag.min_range_label_ratio": 0.8,
+        "extension.build.tag.max_range_label_ratio": 1.0
+      }
+    },
+    {
+      "name": "ef_construction_512",
+      "build_options": {
+        "flatnsw.build.ef_construction": 512,
+        "flatnsw.build.neighbor_count": 128,
+        "flatnsw.build.tag_supplement_ef_construction": 160,
+        "flatnsw.build.slack_pruning_factor": 1.1,
+        "extension.build.tag.min_range_label_ratio": 0.8,
+        "extension.build.tag.max_range_label_ratio": 1.0
+      }
+    },
+    {
+      "name": "ef_construction_64",
+      "build_options": {
+        "flatnsw.build.ef_construction": 64,
+        "flatnsw.build.neighbor_count": 128,
+        "flatnsw.build.tag_supplement_ef_construction": 160,
+        "flatnsw.build.slack_pruning_factor": 1.1,
+        "extension.build.tag.min_range_label_ratio": 0.8,
+        "extension.build.tag.max_range_label_ratio": 1.0
+      }
+    },
+    {
+      "name": "neighbor_count_256",
+      "build_options": {
+        "flatnsw.build.ef_construction": 256,
+        "flatnsw.build.neighbor_count": 256,
+        "flatnsw.build.tag_supplement_ef_construction": 160,
+        "flatnsw.build.slack_pruning_factor": 1.1,
+        "extension.build.tag.min_range_label_ratio": 0.8,
+        "extension.build.tag.max_range_label_ratio": 1.0
+      }
+    },
+    {
+      "name": "neighbor_count_32",
+      "build_options": {
+        "flatnsw.build.ef_construction": 256,
+        "flatnsw.build.neighbor_count": 32,
+        "flatnsw.build.tag_supplement_ef_construction": 160,
+        "flatnsw.build.slack_pruning_factor": 1.1,
+        "extension.build.tag.min_range_label_ratio": 0.8,
+        "extension.build.tag.max_range_label_ratio": 1.0
+      }
+    },
+    {
+      "name": "neighbor_count_64",
+      "build_options": {
+        "flatnsw.build.ef_construction": 256,
+        "flatnsw.build.neighbor_count": 64,
+        "flatnsw.build.tag_supplement_ef_construction": 160,
+        "flatnsw.build.slack_pruning_factor": 1.1,
+        "extension.build.tag.min_range_label_ratio": 0.8,
+        "extension.build.tag.max_range_label_ratio": 1.0
+      }
+    },
+    {
+      "name": "range_ratio_0p02_0p2",
+      "build_options": {
+        "flatnsw.build.ef_construction": 256,
+        "flatnsw.build.neighbor_count": 128,
+        "flatnsw.build.tag_supplement_ef_construction": 160,
+        "flatnsw.build.slack_pruning_factor": 1.1,
+        "extension.build.tag.min_range_label_ratio": 0.02,
+        "extension.build.tag.max_range_label_ratio": 0.2
+      }
+    },
+    {
+      "name": "range_ratio_0p02_0p5",
+      "build_options": {
+        "flatnsw.build.ef_construction": 256,
+        "flatnsw.build.neighbor_count": 128,
+        "flatnsw.build.tag_supplement_ef_construction": 160,
+        "flatnsw.build.slack_pruning_factor": 1.1,
+        "extension.build.tag.min_range_label_ratio": 0.02,
+        "extension.build.tag.max_range_label_ratio": 0.5
+      }
+    },
+    {
+      "name": "range_ratio_0p2_0p5",
+      "build_options": {
+        "flatnsw.build.ef_construction": 256,
+        "flatnsw.build.neighbor_count": 128,
+        "flatnsw.build.tag_supplement_ef_construction": 160,
+        "flatnsw.build.slack_pruning_factor": 1.1,
+        "extension.build.tag.min_range_label_ratio": 0.2,
+        "extension.build.tag.max_range_label_ratio": 0.5
+      }
+    },
+    {
+      "name": "range_ratio_0p5_0p8",
+      "build_options": {
+        "flatnsw.build.ef_construction": 256,
+        "flatnsw.build.neighbor_count": 128,
+        "flatnsw.build.tag_supplement_ef_construction": 160,
+        "flatnsw.build.slack_pruning_factor": 1.1,
+        "extension.build.tag.min_range_label_ratio": 0.5,
+        "extension.build.tag.max_range_label_ratio": 0.8
+      }
+    }
+  ]
+}

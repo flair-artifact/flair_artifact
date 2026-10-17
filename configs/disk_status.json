@@ -1,0 +1,20 @@
+{
+  "format_version": 1,
+  "status": "final_parameters_integrated",
+  "policy": {
+    "reorder_layout": false,
+    "sector_aligned_read": false,
+    "lock_pool_entries": 256,
+    "query_parallel_numbers": [
+      1,
+      4
+    ],
+    "io_multiplier": 1
+  },
+  "parameters": "configs/paper_disk_parameters.json",
+  "candidates": "configs/disk_parameter_candidates.json",
+  "configurations": "configs/disk/",
+  "run_command": "scripts/run_all_disk.sh",
+  "verify_command": "scripts/verify_all_disk.sh",
+  "note": "Functional reproduction without paper metric-equivalence targets. Paper cold-cache measurements and Python driver timings use different cache and timing protocols."
+}

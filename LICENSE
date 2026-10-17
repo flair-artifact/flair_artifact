@@ -1,0 +1,93 @@
+FLAIR ARTIFACT EVALUATION AND ACADEMIC REPRODUCIBILITY LICENSE
+Version 1.0, 2027
+
+Copyright (c) 2027 The Authors. All rights reserved.
+
+1. Scope
+
+This license applies to the original scripts, configuration files, documentation, packaged
+metadata, and precompiled FLAIR native binaries distributed in this artifact (collectively, the
+"Artifact"). No source code for the FLAIR native implementation is provided or licensed.
+
+2. Limited permission
+
+Subject to the conditions below, the Authors grant each recipient a non-exclusive,
+non-transferable, non-sublicensable, revocable, royalty-free license to download, copy, and
+execute the Artifact solely for:
+
+  a. evaluation of the associated research artifact; and
+  b. non-commercial academic research that reproduces, validates, or studies the results of the
+     associated paper.
+
+Recipients may publish experimental measurements, analyses, and conclusions produced through an
+authorized use of the Artifact, provided that the associated paper and Artifact are appropriately
+cited after author identities and citation information become public.
+
+Recipients may privately modify only the auxiliary scripts, configuration files, and documentation,
+and only to the minimum extent necessary for the purposes above. This permission does not extend
+to modifying any precompiled native binary.
+
+3. Restrictions
+
+Except where applicable law expressly requires otherwise, recipients may not:
+
+  a. use the Artifact for commercial, production, service-provider, or revenue-generating
+     purposes;
+  b. sell, sublicense, publicly redistribute, republish, or make the Artifact or any precompiled
+     native binary available to a third party;
+  c. reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code,
+     internal design, or non-public implementation details of a precompiled native binary;
+  d. remove or alter copyright, license, attribution, or provenance notices;
+  e. incorporate the Artifact or any portion of it into another software, service, product, or
+     distributed work;
+  f. modify, patch, translate, instrument for implementation recovery, or create a derivative work
+     from any precompiled native binary;
+  g. use the Artifact to create or assist a competing implementation; or
+  h. use the Artifact in a way that suggests endorsement by the Authors.
+
+Reasonable internal copying and permitted auxiliary-file modification within the same research
+group or artifact-evaluation committee is allowed only when every recipient is bound by these
+terms and all copies remain within that group or committee.
+
+4. Third-party materials and datasets
+
+This license does not grant rights to third-party software, libraries, models, or datasets. Such
+materials remain governed by their respective upstream licenses and terms. Full datasets are not
+redistributed with the Artifact. Each recipient is responsible for obtaining datasets from their
+upstream publishers and ensuring that the intended use is permitted.
+
+The third-party components incorporated in the precompiled binaries, their versions, their
+licenses, and the required attribution notices are listed in `THIRD_PARTY.md` and `licenses/`.
+Nothing in this license limits, conditions, or restricts any right granted to a recipient under the
+license of such a third-party component. Where this license and a third-party license conflict with
+respect to that component, the third-party license prevails for that component.
+
+5. Ownership and reservation of rights
+
+The Artifact is licensed, not sold. The Authors and their licensors retain all right, title, and
+interest in the Artifact and the FLAIR implementation. No patent, trademark, trade-secret, source
+code, or other intellectual-property license is granted except for the limited copyright
+permission expressly stated in Section 2. All rights not expressly granted are reserved.
+
+6. No warranty
+
+THE ARTIFACT IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, OR REPRODUCIBILITY.
+
+7. Limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE AUTHORS AND COPYRIGHT HOLDERS SHALL NOT BE LIABLE FOR
+ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT
+OF, OR IN CONNECTION WITH THE ARTIFACT OR ITS USE.
+
+8. Termination
+
+The permissions granted by this license terminate automatically upon violation of these terms.
+Upon termination, the recipient must stop using the Artifact and delete all copies, except to the
+extent retention is required by an artifact-evaluation body or applicable law.
+
+9. Additional permission
+
+Any use outside this license requires separate written permission from the Authors or the relevant
+rights holder.
