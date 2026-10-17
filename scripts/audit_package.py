@@ -30,8 +30,11 @@ def main() -> None:
     main_native = root / "prebuilt/linux-x86_64-cp311/flair/_native.so"
     ablation_natives = sorted(root.glob("prebuilt/ablations/linux-x86_64-cp311/*/flair/_native.so"))
     natives = [main_native, *ablation_natives]
-    if len(ablation_natives) != 3:
-        raise SystemExit(f"FAIL: expected three native ablations, found {len(ablation_natives)}")
+    expected_variants = {
+        "no_label_aware_pruning", "no_build_and_query_label_aware_entry_points",
+    }
+    if {native.parents[1].name for native in ablation_natives} != expected_variants:
+        raise SystemExit("FAIL: native ablations differ from the two documented variants")
     for native in natives:
         audit = json.loads((native.parents[1] / "audit.json").read_text())
         if sha256(native) != audit["sha256"]:

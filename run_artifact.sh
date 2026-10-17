@@ -10,7 +10,7 @@ fi
 FLAIR_VARIANT=${FLAIR_VARIANT:-main}
 case "$FLAIR_VARIANT" in
   main) FLAIR_PACKAGE_ROOT="$ROOT/prebuilt/linux-x86_64-cp311" ;;
-  no_label_aware_pruning|no_query_time_label_aware_entry_points|no_build_and_query_label_aware_entry_points)
+  no_label_aware_pruning|no_build_and_query_label_aware_entry_points)
     FLAIR_PACKAGE_ROOT="$ROOT/prebuilt/ablations/linux-x86_64-cp311/$FLAIR_VARIANT" ;;
   *) echo "ERROR: unknown FLAIR_VARIANT: $FLAIR_VARIANT" >&2; exit 2 ;;
 esac

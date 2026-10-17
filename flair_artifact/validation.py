@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Any
 
 VARIANTS = (
-    'main', 'no_label_aware_pruning', 'no_query_time_label_aware_entry_points',
+    'main', 'no_label_aware_pruning',
     'no_build_and_query_label_aware_entry_points',
 )
 ROOT = Path(__file__).resolve().parents[1]

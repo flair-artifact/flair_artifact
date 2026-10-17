@@ -135,12 +135,12 @@ full-dataset measurements are required for functional validation. The public pac
 the frozen parameters and candidate sets, without the original private search harness, raw
 performance results, or a requirement to reproduce its winner.
 
-The three ablation variants modify the in-memory FlatNSW algorithm. Disk configurations should
+The two ablation variants modify the in-memory FlatNSW algorithm. Disk configurations should
 use the main package (`FLAIR_VARIANT=main`, the default).
 
 ## Ablations
 
-The three native variants are under `prebuilt/ablations/linux-x86_64-cp311/`; see the adjacent
+The two native variants are under `prebuilt/ablations/linux-x86_64-cp311/`; see the adjacent
 README for their semantics and selection instructions. Use the same selected variant for a run
 and its verification. Build and result output paths should be distinct for each variant. Full
 ablation metrics can be generated with the experiment driver; no reference curves are bundled.

@@ -5,7 +5,7 @@ This repository provides the anonymous FLAIR artifact for SIGMOD 2027.
 It intentionally contains no implementation source. The staged Linux x86-64 / CPython 3.11
 release is under `prebuilt/linux-x86_64-cp311/`; it exposes the public `flair` Python package and
 a stripped native extension. Alongside it are the experiment drivers (`flair_artifact/`), the frozen
-configurations (`configs/`), the precompiled ablation variants (`prebuilt/ablations/`), and the
+configurations (`configs/`), the two precompiled ablation variants (`prebuilt/ablations/`), and the
 reproduction documentation (`docs/`).
 
 Use is restricted by `LICENSE` to artifact evaluation and non-commercial academic reproduction.
