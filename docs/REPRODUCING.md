@@ -91,7 +91,7 @@ their own machine rather than compare them against a bundled paper curve.
 ## Disk mode
 
 The seven final disk configurations are under `configs/disk/`. Each configuration builds one
-index, then evaluates both query parallel settings (1 and 4) at 11 search widths. The parallel
+index, then evaluates query parallel setting 4 at 11 search widths. The parallel
 setting maps to `search.parallel_number`; query calls are issued sequentially by one Python
 thread. For every width, `diskann.search.io_limit` equals `diskann.search.list_size` (1x budget).
 The driver explicitly disables layout reordering, sector-aligned reads, and node caching. PQ
@@ -119,8 +119,8 @@ scripts/run_all_disk.sh
 scripts/verify_all_disk.sh
 ```
 
-Results contain 22 rows per scenario, identified by `(parallel_number, search_width)`. The
-verifier checks both complete series and the recorded effective query/searcher options, in
+Results contain 11 rows per scenario, all with `parallel_number=4`. The
+verifier checks the complete series and the recorded effective query/searcher options, in
 addition to the same ID, predicate, provenance, and numeric checks as memory mode. This does
 not impose a recall or throughput target. Disk results produced before this driver update
 must be regenerated to include the effective options and cache policy.

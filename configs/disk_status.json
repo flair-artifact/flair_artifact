@@ -6,7 +6,6 @@
     "sector_aligned_read": false,
     "lock_pool_entries": 256,
     "query_parallel_numbers": [
-      1,
       4
     ],
     "io_multiplier": 1
