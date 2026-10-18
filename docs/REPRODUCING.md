@@ -12,6 +12,10 @@ the package imports, the dataset contract holds, the index builds/dumps/opens, f
 return only predicate-matching IDs, and the requested search-width curve is complete with finite
 metrics. The paper figures and tables are the authoritative reported results.
 
+The provided execution workflows cover FLAIR on the seven composite-filter workloads, with
+in-memory and disk configurations and two in-memory ablations. Complete baseline-method and
+single-attribute experiment workflows are not included in this artifact.
+
 ## Smoke mode
 
 This runs self-contained 500-vector enum+range checks for the in-memory and disk backends. It

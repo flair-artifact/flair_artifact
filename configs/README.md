@@ -10,7 +10,9 @@ These are frozen paper-environment choices, not expected winners on every machin
 parameter declarations under `sensitivity/` document the search methodology; rerunning them on
 different hardware may select a different winner.
 
-The disk experiment is still being finalized. `disk_status.json` records the fixed fairness
-policy without publishing a superseded winner. It will be replaced by executable disk configs
-and final selected parameters once the outstanding run has completed. Paper result curves are not
-used as artifact validation targets.
+The seven final disk configurations are provided under `disk/`. The selected build parameters
+are recorded in `paper_disk_parameters.json`, and the candidate space and selection policy are
+in `disk_parameter_candidates.json`. `disk_status.json` summarizes the fixed policy and execution
+commands. Each disk configuration runs with `search.parallel_number=4` over 11 search widths,
+with the I/O limit equal to the search list size. See `docs/REPRODUCING.md` for the commands and
+measurement scope. Paper result curves are not used as artifact validation targets.

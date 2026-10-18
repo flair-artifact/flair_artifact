@@ -8,6 +8,10 @@ a stripped native extension. Alongside it are the experiment drivers (`flair_art
 configurations (`configs/`), the two precompiled ablation variants (`prebuilt/ablations/`), and the
 reproduction documentation (`docs/`).
 
+The executable workflows cover FLAIR's composite-filter experiments and two in-memory ablations.
+Complete execution workflows for baseline methods and single-attribute experiments are not
+included.
+
 Use is restricted by `LICENSE` to artifact evaluation and non-commercial academic reproduction.
 The precompiled native binaries may not be redistributed, modified, or reverse engineered.
 
